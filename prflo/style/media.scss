@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+  .wrapper{
+    height: 50vh;
+
+  }
+  .section{
+    .slide-text{
+      top: 120px!important;
+  
+      .wellcome{
+        height: 215px;
+
+        .offer-letters{
+          h1{
+            font-size: 20px;
+          }
+
+          h6{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+}
+
+.feedback .feedback__header h2:before {
+   
+    width: 60px;
+}
+
+.feedback .feedback__header h2:after {
+    width: 60px;
+    
+}
+
+}
+
+
+
+@media (max-width: 666px) {
+
+	 .feedback__header h2:before {
+   
+   display: none !important;
+   opacity: 0;
+   visibility: hidden;
+   
+
+}
+
+.feedback .feedback__header h2:after {
+    top: 100% ;
+    left: 0 !important;
+    width: 100%;
+		}
+}

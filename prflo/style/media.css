@@ -1,0 +1,205 @@
+@media (max-width: 1610px){
+	.portfolio__works .uk-card .description .description__link{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1540px){
+	.portfolio__works .uk-card .description .description__link{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1465px){
+	.portfolio__works .uk-card .description .description__link{
+		font-size: 10px;
+	}
+}
+
+
+@media (max-width: 1400px){
+	.portfolio__works .uk-card h4{
+		letter-spacing: 1px;
+		font-size: 21px;
+	}
+
+	.portfolio__works .uk-card .description .description__link{
+		width: 70%;
+		bottom: 5px;	
+	}
+}
+
+
+
+
+@media (max-width: 1250px){
+	.portfolio__works .uk-card h4{
+		letter-spacing: 0px;
+	}
+
+}
+
+
+
+@media (max-width: 1010px){
+	.portfolio__works .uk-card .description .description__text p{
+		font-size: 16px;
+		letter-spacing: 2px;
+	}
+
+	.portfolio__works .uk-card h4{
+		font-size: 18px;
+	}
+
+.portfolio__works .uk-card .description .description__link{
+		width: 80%;
+	}
+
+}
+
+
+
+@media (max-width: 990px){
+	.portfolio__works .uk-card h4{
+		font-size: 16px;	
+	}
+}
+
+
+@media (max-width: 960px){
+	.portfolio__works .uk-card .description .description__text p{
+		/*font-size: 20px;*/
+		letter-spacing: 3px;
+	}
+
+	.portfolio__works .uk-card .description .description__link{
+			width: 80%;
+	}
+}
+
+@media (max-width: 959px){
+
+	.portfolio__works .uk-card h4{
+		font-size: 24px;	
+	}
+	.portfolio__works .uk-card .description .description__text p{
+		font-size: 25px;
+		letter-spacing: 4px;
+	}
+	.portfolio__works .uk-card .description .description__link{
+			width: auto;
+			bottom: 25px;	
+	}
+}
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    height: 50vh;
+  }
+
+  .section .slide-text {
+    top: 120px !important;
+  }
+  .section .slide-text .wellcome {
+    height: 215px;
+  }
+  .section .slide-text .wellcome .offer-letters h1 {
+    font-size: 20px;
+  }
+  .section .slide-text .wellcome .offer-letters h6 {
+    font-size: 12px;
+  }
+  
+  
+  .wrap .wellcome .offer-letters h2 {
+  font-size: 45px;
+
+}
+
+  .wrap .wellcome .offer-letters h4{
+	font-size: 1rem;
+  
+  }
+
+.description__text p{
+  font-size: 20px;
+}
+
+.description__link{
+  font-size: 18px;
+  width: 90%;
+}
+
+  .feedback .feedback__header h2:before {
+    width: 60px;
+  }
+
+  .feedback .feedback__header h2:after {
+    width: 60px;
+  }
+}
+@media (max-width: 666px) {
+  .feedback__header h2:before {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .feedback .feedback__header h2:after {
+    top: 100%;
+    left: 0 !important;
+    width: 100%;
+  }
+  
+  .name-project a {
+	  font-size: 18px;
+  }
+
+.footer .logo img{
+  width: 40px;
+  height: 40px;
+}
+
+ .footer .footer__nav > ul > li > a{
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+.footer .logo img{
+  width: 30px;
+  height: 30px;
+}
+
+}
+
+
+@media (max-width: 480px) {
+.portfolio__works .uk-card .description .description__link{
+			width: 80%;
+			bottom: 5px;	
+	}
+
+}
+
+
+
+@media (max-width: 440px) {
+.portfolio__works .uk-card .description .description__link{
+			width: 80%;
+			bottom: 5px;	
+	}
+
+
+
+	.portfolio__works .uk-card .description .description__text p{
+		font-size: 18px;
+		letter-spacing: 4px;
+	}
+
+}
+
+
+/*# sourceMappingURL=media.css.map */

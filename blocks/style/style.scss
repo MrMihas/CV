@@ -1,0 +1,350 @@
+$primary-font: Rubik;
+$secondary-font: Roboto;
+
+%flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main{
+	width: 1110px;
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	position: relative;
+	margin-top: 120px;
+	
+
+	.content-block{
+		width: 555px;
+		height: 476px;
+		padding: 0;
+		margin: auto;
+ 		position: relative;
+ 		z-index: 1;
+
+ 		.name-project{
+ 			    float: right;
+ 				text-align: right;
+ 				margin: 47px;
+
+ 				h3{
+					font-family: $primary-font;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 32px;
+					line-height: 38px;
+					text-align: right;
+					letter-spacing: 0.03em;
+					text-transform: uppercase;
+					color: #466D8A;
+ 				}
+ 		}
+			
+			.name-project__active{
+				display: none;
+				
+			}
+
+ 		&:nth-child(1){
+
+ 			background:url(../images/first.png);
+ 			background-position: bottom;
+ 			background-repeat: no-repeat;
+ 			background-size: contain;
+ 		}
+
+			
+			&:nth-child(2){
+ 			background: url(../images/second.png);
+ 			background-position: center;
+ 			background-repeat: no-repeat;
+ 		}
+
+ 		&:nth-child(3){
+ 			background: url(../images/third.png);
+ 			background-position: bottom;
+ 			background-repeat: no-repeat;
+ 		}
+
+ 		&:nth-child(4){
+ 			background: url(../images/four.png);
+ 			background-position: center;
+ 			background-repeat: no-repeat;
+ 		}
+
+
+
+
+
+ 		.btn-description{
+ 			@extend %flex;
+ 			width: 90px;
+ 			height: 90px;
+ 			top: 0;
+ 			left: 0;
+ 			background: #A6CC45;
+
+ 			span{
+				&:nth-child(1){
+					width: 5px;
+					height: 25px;
+					display: block;
+					position: absolute;
+					background: #fff;
+				}
+
+				&:nth-child(2){
+					width: 25px;
+					height: 5px;
+					display: block;
+					position: absolute;
+					background: #fff;
+				}
+ 			}
+ 		}
+
+			.btn-description__active{
+			span{
+				&:nth-child(1){
+					display: none;
+					
+				}
+			}
+ 		}
+ 		.description__active{
+ 			display: block !important;
+ 			
+ 		}
+
+
+
+
+ 		.description{
+ 			position: absolute;
+ 			top: 0;
+ 			left: 0;
+ 			right: 0;
+ 			bottom: 0;
+ 			background: #A6CC45;
+ 			opacity: 0.6;
+ 			z-index: -1;
+ 			display: none;
+ 			
+
+ 			.description__top{
+ 				float: right;
+ 				text-align: right;
+ 				margin: 47px;
+
+ 				h3{
+					font-family: $primary-font;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 32px;
+					line-height: 38px;
+					text-transform: uppercase;
+					color: #ffffff;
+ 				}
+
+ 				p{
+ 					font-family: $secondary-font;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 21px;
+					color: #ffffff;
+ 				}
+ 			}
+
+
+
+ 			.description__center{
+					width: 350px;
+					text-align: center;
+				    vertical-align: middle;
+				    display: inline;
+				    position: absolute;
+				    top: 50%;
+				    left: 50%;
+				    transform: translate(-50%, -50%);
+				    z-index: 50;
+ 				h2{
+ 					font-family: $primary-font;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 48px;
+					line-height: 57px;
+					text-align: center;
+					color: #ffffff;
+ 				}
+ 			}
+
+ 			.description__view{
+ 				position: absolute;
+ 				bottom: 34px;
+ 				left: 50%;
+ 				-webkit-transform: translateX(-50%);
+ 				-moz-transform: translateX(-50%);
+ 				-ms-transform: translateX(-50%);
+ 				-o-transform: translateX(-50%);
+ 				transform: translateX(-50%);
+ 				
+ 				a{
+ 					font-family: $secondary-font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 140%;
+					text-decoration: none;
+					text-align: center;
+					letter-spacing: 0.03em;
+					text-transform: uppercase;
+					color: #ffffff;
+					padding: 11px 59px;
+					border: 1px solid #fff;
+
+ 				}
+ 			}
+ 		}
+	}
+
+
+	.container-btn{
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: flex-end;
+.btn-more{
+			position: relative;
+			right: 0;
+			bottom: -10px;
+			font-family: $secondary-font;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 140%;
+			text-align: center;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			background: none;
+			background: #4DC6E4;
+			padding: 11px 22px;
+			border: none;
+			z-index: 999;
+	
+	}
+
+	}
+	
+#modal_view{
+	position: fixed;
+	display: none;
+	z-index: 999;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+
+	.modal_form{
+		width: 409px;
+		height: 379px;
+		margin: auto;
+		background: #7C9CAC;
+		position: relative;
+		display: block;
+		
+
+
+
+		span{
+			position: absolute;
+			top: 15px;	
+			right: 15px;	
+			color: #fff;
+			font-size: 23px;
+		}
+
+		form{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;	
+			-ms-align-items: center;
+				align-items: center;		
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+
+			input[type='submit']{
+
+			font-size: 38px;
+			line-height: 42px;
+			color: #FFFFFF;
+			margin-left: -285px;
+   			margin-top: 10px;
+   			background: none;
+   			border: none;
+   			outline:none;
+   			padding: 0;	
+		}
+
+			input{
+				width: 380px;
+				height: 50px;
+				padding-left: 15px;	
+				margin-bottom: 10px;
+				font-size: 14px;				
+
+				&::-webkit-outer-spin-button,
+				&::-webkit-inner-spin-button				{
+				-webkit-appearance: none;
+				}
+			}
+
+			textarea{
+				width: 380px;
+				height: 109px;
+				padding: 15px;	
+				font-size: 14px;	
+			}
+
+		}
+	}
+}
+
+
+}
+
+
+
+@media (max-width: 1110px) {
+	.main{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+}
+

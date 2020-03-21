@@ -1,0 +1,134 @@
+.carousel-caption{
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border-radius: 20px;
+	background-color: rgba(0,0,0,0.3);
+	padding: 60px 0;
+	text-align: left;
+
+	
+}
+
+.carousel{
+	height: 56vh;
+	&-inner{
+		height: 56vh;
+	}
+	&-item{
+		height: 56vh;
+	}
+}
+
+.carousel-caption__text-inside{
+	position: relative;
+	padding: 60px 20px;
+	text-align: left;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10%;
+	width: 630px;
+	max-width: 100%;
+	background: rgba(0,0,0,0.3);
+	border-radius: 15px;
+	h3{
+		@extend %h3;
+	}
+	h5{
+		@extend %text;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}
+
+.carousel-indicators li{
+	height: 6px !important;
+	&.active{
+		background: $main__orange;
+	}
+}
+
+.carousel-control-prev-icon{
+  background-image: url("../images/arrows/leftarrow.png") !important;
+}
+
+.carousel-control-prev{
+	color: #fff;
+}
+
+
+.offerSlider{
+	.owl-nav{
+		width: 100%;
+		top: 50%;
+		position: absolute;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: space-between;
+span{
+	display: none;
+}
+		.owl-prev {
+			background-image: url(../images/arrows/leftarrow.png) !important;
+			width: 30px;
+			height: 30px;
+			background-size: contain !important;
+			background-repeat: no-repeat;
+
+			&:hover {
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+				background-image: url(../images/arrows/arrowHover.png) !important;
+			}
+		}
+
+		.owl-next {
+			background-image: url(../images/arrows/leftarrow.png) !important;
+			width: 30px;
+			height: 30px;
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotate(180deg);
+			background-size: contain !important;
+			background-repeat: no-repeat;
+
+			&:hover {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+				background-image: url(../images/arrows/arrowHover.png) !important;
+			}
+		}
+	}
+
+	.owl-dots{
+		z-index: 1069;
+		width: 100%;
+		position: absolute;
+		bottom: 30px;
+		text-align: center;
+		display: block;
+		.owl-dot{
+			width: 40px;
+			height: 10px;
+			background: $light !important;
+			margin-right: 20px !important;
+			&.active{
+				background: $main__orange !important;
+			}
+		}
+	}
+}

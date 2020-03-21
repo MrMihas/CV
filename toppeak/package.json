@@ -1,0 +1,15 @@
+{
+  "name": "volter-html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://git.pozitiff.ua/poz/volter-html",
+  "author": "Petro Kuzmychev <kuzmychev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.23.7"
+  },
+  "scripts": {
+    "dev": "sass --watch scss/main.scss style/main.css",
+    "build": "sass --no-source-map scss/main.scss style/main.css"
+  }
+}

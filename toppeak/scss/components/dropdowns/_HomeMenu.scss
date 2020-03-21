@@ -1,0 +1,50 @@
+.header__nav {
+
+  .dropdown {
+    z-index: 100;
+    .dropdown__menu {
+      position: absolute;
+      background: $light;
+      left: 20px;
+
+      &-item {
+        position: relative;
+      }
+
+    }
+
+    &:hover {
+      .dropdown__menu-link {
+        display: block;
+      }
+    }
+  }
+}
+
+
+.has-submenu {
+   &:hover {
+     ~ .sub__menu-link {
+       display: block;
+     }
+
+   }
+ }
+
+
+.sub__menu {
+  position: absolute;
+  left: 145px;
+  top: 0;
+  background: $light;
+  display: none;
+
+  .dropdown__menu-item {
+    .dropdown__menu-link {
+      display: block;
+    }
+  }
+
+}
+
+

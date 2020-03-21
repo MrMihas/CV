@@ -1,0 +1,56 @@
+.header__fullwidth {
+  background: $main__orange;
+}
+
+.header__logotype {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.nav {
+  align-items: center;
+  height: 100%;
+}
+
+.header__nav {
+    display: none !important;
+
+  @include lg {
+    height: 60px;
+    width: 100%;
+    display: block !important;
+  }
+
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+
+
+    .nav-link {
+      font-size: 10px;
+      @include xl {
+        font-size: $text__size;
+      }
+      @extend %menu__link;
+
+      -webkit-transition: color 0.5s;
+      -moz-transition: color 0.5s;
+      -ms-transition: color 0.5s;
+      -o-transition: color 0.5s;
+      transition: color 0.5s;
+
+      &:hover {
+        color: $black;
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,34 @@
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+
+button{
+  outline: none;
+  &:active{
+    outline: none;
+  }
+  &:focus{
+    outline: none;
+  }
+}

@@ -1,0 +1,11 @@
+.service{
+   background: $light;
+   height: 100%;
+   padding: 40px 0;
+
+   .card{
+     background: $light__orange;
+     width: 11rem;
+     cursor: pointer;
+   }
+ }

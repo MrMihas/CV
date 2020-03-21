@@ -1,0 +1,20 @@
+@font-face {
+  font-family: $font__title-h1;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Merriweather_Sans/MerriweatherSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: $font__title-regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Merriweather_Sans/MerriweatherSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: $font__text;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Noto_Sans/NotoSans-Regular.ttf");
+}

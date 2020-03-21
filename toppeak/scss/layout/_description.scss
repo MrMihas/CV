@@ -1,0 +1,63 @@
+.description {
+  background: $light__orange;
+  padding: 40px 0;
+
+  &__title {
+    h6 {
+      @extend %h3;
+      color: $title__color-h3;
+    }
+  }
+
+  &__container {
+    background: $white;
+    padding: 20px 10px;
+
+    &-img {
+      background-image: url("../images/what.png");
+      height: 250px;
+      background-size: cover;
+      background-position: bottom;
+      position: relative;
+      margin-bottom: 2rem;
+      @include lg{
+        margin-bottom: 0;
+      }
+      &__text{
+        position: absolute;
+        bottom: 10px;
+        background-image: url(../images/text__bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffff;
+      }
+    }
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .description__container-body {
+    padding-left: 1rem;
+  }
+
+  .description__container-title {
+    @extend %h3;
+    color: $title__color-h3;
+  }
+
+  .description__container-text {
+    padding-top: 0.5rem;
+    font-family: $font__text;
+    color: $text__color;
+    font-size: $text__size;
+    line-height: 1.3;
+    letter-spacing: 1px;
+  }
+
+}

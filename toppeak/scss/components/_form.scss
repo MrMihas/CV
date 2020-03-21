@@ -1,0 +1,61 @@
+.footer__form {
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 5px;
+      padding: 5px 0 5px 10px;
+      color: $text__color;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $text__color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $text__color;
+    }
+
+    &::placeholder {
+      color: $text__color;
+    }
+
+    textarea {
+      padding: 5px 0 5px 10px;
+      margin-bottom: 5px;
+      color: $text__color;
+      resize: none;
+
+      &::-webkit-input-placeholder {
+        color: $text__color;
+      }
+
+      &:-ms-input-placeholder {
+        color: $text__color;
+      }
+
+      &::placeholder {
+        color: $text__color;
+      }
+    }
+
+    input[type="submit"] {
+      width: fit-content;
+      padding: 10px 15px;
+      background: $main__orange;
+      border: 0;
+      color: $white;
+      cursor: pointer;
+      -webkit-transition: background 0.5s;
+      -moz-transition: background 0.5s;
+      -ms-transition: background 0.5s;
+      -o-transition: background 0.5s;
+      transition: background 0.5s;
+      &:hover{
+        background: darken($main__orange, 10%);
+      }
+    }
+
+  }
+}

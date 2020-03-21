@@ -1,0 +1,36 @@
+.slider {
+  display: flex;
+
+  &__card {
+    &:hover {
+      .slider__card-img__hover {
+        display: flex;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+      }
+    }
+
+    width:200px;
+    position: relative;
+
+    &-img {
+
+      position: relative;
+    }
+
+    &-title {
+      background: $black;
+      @extend %text;
+      text-align: center;
+      z-index: 50;
+    }
+
+  }
+
+
+}
+
+
